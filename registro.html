@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/registro.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <a href="index.html" class="logo">Restaurante</a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="menu.html" class="nav-link ">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="reservar.html" class="nav-link ">Reservaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="registro.html" class="nav-link ">Registrate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="inicio_admin.html" class="nav-link ">Administrador</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacto.html" class="nav-link ">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+   
+
+
+    <form action="" method="POST" id="form">
+        <div class="form">
+            <h1>Registro</h1>
+            <div class="grupo">
+                <input type="text" name="" id="name" ><span class="barra"></span>
+                <label for="">Nombre</label>
+            </div>
+            <div class="grupo">
+                <input type="email" name="" id="email" ><span class="barra"></span>
+                <label for="">Email</label>
+            </div>
+            <div class="grupo">
+                <input type="password" name="" id="password" ><span class="barra"></span>
+                <label for="">Password</label>
+            </div>
+            
+            <button type="submit">Registrate</button>
+         
+            <p class="warnings" id="warnings"></p>
+        </div>
+    </form>
+
+
+
+    <script>
+
+        const selectElement = function(element) {
+            return document.querySelector(element);
+        }
+
+
+        let menuToggle = selectElement('.menu-toggle');
+        let body = selectElement('body');
+
+        menuToggle.addEventListener('click', function(){
+            body.classList.toggle('open');
+        })
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="registro.js"></script>
+</body>
+</html>
